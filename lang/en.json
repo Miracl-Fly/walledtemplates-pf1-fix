@@ -1,0 +1,15 @@
+{
+  "walledtemplates-pf1-fix": {
+    "settings": {
+      "highlightMode": {
+        "Name": "Template highlight style",
+        "Hint": "PF1 picks highlighted cells by distance/angle from the template origin (pf1 setting \"Measure Style\"). walledtemplates temporarily rewrites the template type, which makes PF1 skip that branch. The default restores PF1's algorithm and trims the cells to the wall-cut shape.",
+        "Choices": {
+          "pf1": "PF1 algorithm + trim to wall-cut shape (recommended)",
+          "pf1-full": "PF1 algorithm, no trimming (full circle/cone)",
+          "off": "Do nothing (keep walledtemplates behaviour)"
+        }
+      }
+    }
+  }
+}

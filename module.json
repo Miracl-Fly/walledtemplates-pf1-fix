@@ -1,0 +1,50 @@
+{
+  "id": "walledtemplates-pf1-fix",
+  "title": "Walled Templates · PF1 兼容修复",
+  "description": "不改动 walledtemplates 本体，用独立补丁解决两件事：(1) 补上 0.9.6 缺失的 PIXI.Point.pointFromKey，消除扩散模板撞墙时的崩溃；(2) 让 PF1 的方格测量样式（pf1.measureStyle）重新生效，恢复 PF1 的测量板高亮。",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "本地补丁"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "cn",
+      "name": "中文（简体）",
+      "path": "lang/zh-CN.json"
+    },
+    {
+      "lang": "zh-CN",
+      "name": "中文（简体）[zh-CN]",
+      "path": "lang/zh-CN.json"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "walledtemplates",
+        "type": "module"
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ]
+  },
+  "readme": "README-zh.md",
+  "license": "MIT"
+}

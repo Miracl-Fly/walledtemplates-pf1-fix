@@ -1,0 +1,15 @@
+{
+  "walledtemplates-pf1-fix": {
+    "settings": {
+      "highlightMode": {
+        "Name": "测量板高亮方式",
+        "Hint": "PF1 系统会用「格心到原点的距离/角度」来决定高亮哪些格子（pf1 设置里的 Measure Style）。walledtemplates 会临时改写模板类型，导致这套判断被跳过。默认让 PF1 的算法重新生效，并按墙体切过的实际形状裁掉多余格子。",
+        "Choices": {
+          "pf1": "PF1 算法 + 按墙体形状裁切（推荐）",
+          "pf1-full": "PF1 算法，不裁切（完整圆形/锥形）",
+          "off": "不干预（保持 walledtemplates 现状）"
+        }
+      }
+    }
+  }
+}
